@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/nflwebapp-cpsc23000-hw10dbserver/databases/NFLWebApp_db_cpsc23000_hw10",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:NFLWebAppContext"
+    }
+  }
+}

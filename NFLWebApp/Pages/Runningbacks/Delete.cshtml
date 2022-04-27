@@ -1,0 +1,46 @@
+﻿@page
+@model NFLWebApp.Pages.Runningbacks.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Runningback</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Runningback.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Runningback.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Runningback.Team)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Runningback.Team)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Runningback.Touchdowns)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Runningback.Touchdowns)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Runningback.Yards)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Runningback.Yards)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Runningback.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
